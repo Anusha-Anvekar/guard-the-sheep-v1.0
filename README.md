@@ -1,12 +1,13 @@
 # 🐑 Guard The Sheep
 
 A small WPF puzzle game where your goal is to **trap the sheep** before it escapes the meadow.
+> This is a **basic version** of the game, focused on the core trap-the-sheep mechanic with updated UI.
 
 ## 📸 Preview
 <img width="581" height="740" alt="image" src="https://github.com/user-attachments/assets/aa330985-8308-4549-bdd5-ce3a18793e55" />
 
 
-## In This Version (0.1)
+## In This Version (1.0)
 
 - **The Meadow** is made up of a grid of square patches (7 × 7 by default).
 - **The Sheep** starts somewhere on the meadow and can move in **4 directions** — up, down, left, and right (no diagonals).
