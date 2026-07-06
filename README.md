@@ -3,6 +3,7 @@
 A small WPF puzzle game where your goal is to **trap the sheep** before it escapes the meadow.
 
 ## 📸 Preview
+<img width="581" height="740" alt="image" src="https://github.com/user-attachments/assets/aa330985-8308-4549-bdd5-ce3a18793e55" />
 
 
 ## In This Version (0.1)
