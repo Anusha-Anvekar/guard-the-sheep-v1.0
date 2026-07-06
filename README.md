@@ -2,7 +2,7 @@
 
 A small WPF puzzle game where your goal is to **trap the sheep** before it escapes the meadow.
 
-## In This Version (0.1)
+## In This Version (0.0)
 
 - **The Meadow** is made up of a grid of square patches (7 × 7 by default).
 - **The Sheep** starts somewhere on the meadow and can move in **4 directions** — up, down, left, and right (no diagonals).
