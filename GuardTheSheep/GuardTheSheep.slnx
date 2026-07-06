@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../GuardTheSheep.Application/GuardTheSheep.Application.csproj" Id="b06455d2-cd08-41d6-a3cd-49968b57fc8c" />
+  <Project Path="../GuardTheSheep.WPF/GuardTheSheep.WPF.csproj" Id="bd5b2625-c937-44ad-a2fb-f48aaad9043a" />
+  <Project Path="GuardTheSheep.Domain.csproj" />
+</Solution>

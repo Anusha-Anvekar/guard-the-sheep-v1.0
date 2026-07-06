@@ -1,0 +1,86 @@
+﻿<Window x:Class="GuardTheSheep.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Guard The Sheep" Height="800" Width="620"
+        MinHeight="800" MinWidth="560"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#FFE8F5E9" Offset="0"/>
+                <GradientStop Color="#FFC8E6C9" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title -->
+            <TextBlock Grid.Row="0"
+                       Text="🐑 Guard The Sheep"
+                       FontSize="30" FontWeight="Bold"
+                       Foreground="#FF1B5E20"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Subtitle / instructions -->
+            <TextBlock Grid.Row="1"
+                       Text="Place blockades to trap the sheep before it reaches the edge."
+                       FontSize="14"
+                       Foreground="#FF4E6E52"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Margin="0,6,0,12"/>
+
+            <!-- Legend -->
+            <Border Grid.Row="2"
+                    Background="#66FFFFFF"
+                    CornerRadius="8"
+                    Padding="14,8"
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,16">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="🐑" FontSize="16" VerticalAlignment="Center"/>
+                    <TextBlock Text="Sheep" FontSize="13" Foreground="#FF33691E"
+                               VerticalAlignment="Center" Margin="4,0,16,0"/>
+                    <TextBlock Text="🚧" FontSize="16" VerticalAlignment="Center"/>
+                    <TextBlock Text="Blockade" FontSize="13" Foreground="#FF33691E"
+                               VerticalAlignment="Center" Margin="4,0,16,0"/>
+                    <Border Width="16" Height="16" CornerRadius="3"
+                            Background="#FF4E8C37" VerticalAlignment="Center"/>
+                    <TextBlock Text="Escape edge" FontSize="13" Foreground="#FF33691E"
+                               VerticalAlignment="Center" Margin="4,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Board frame -->
+            <Border Grid.Row="3"
+                    Background="#FF33691E"
+                    CornerRadius="14"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <Border.Effect>
+                    <DropShadowEffect Color="#55000000" BlurRadius="20"
+                                      ShadowDepth="4" Direction="270"/>
+                </Border.Effect>
+                <UniformGrid x:Name="BoardGrid" Width="480" Height="480"/>
+            </Border>
+
+            <!-- Footer -->
+            <Button Grid.Row="4"
+                    Content="🔄 New Game"
+                    Click="NewGame_Click"
+                    Style="{StaticResource PrimaryButton}"
+                    HorizontalAlignment="Center"
+                    Margin="0,20,0,0"/>
+        </Grid>
+    </Grid>
+</Window>
